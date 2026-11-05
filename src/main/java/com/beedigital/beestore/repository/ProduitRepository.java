@@ -11,7 +11,7 @@ import java.util.List;
 public interface ProduitRepository extends JpaRepository<Produit, Long> {
 
     // Spring Data génère : SELECT * FROM produits WHERE actif = true
-    List<Produit> findByActifTrue();
+    //List<Produit> findByActifTrue();
 
     // SELECT * FROM produits WHERE UPPER(categorie) = UPPER(?)
     List<Produit> findByCategorieIgnoreCase(String categorie);
